@@ -1,5 +1,7 @@
 # Sea World Challenge
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/76efbebc-bc68-4a19-8f90-67a153f621ac/deploy-status)](https://app.netlify.com/sites/sea-word-challenge/deploys)
+
 # What is this?
 
 Small Sea word where you cnat create island.
