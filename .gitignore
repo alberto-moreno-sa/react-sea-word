@@ -35,3 +35,6 @@ yarn-error.log*
 
 # sitemap
 public/robots.txt
+
+# Local Netlify folder
+.netlify
