@@ -1,0 +1,23 @@
+{
+  "trailingComma": "es5",
+  "arrowParens": "avoid",
+  "tabWidth": 2,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "overrides": [
+    {
+      "files": ["**/*.{yml,yaml}"],
+      "options": {
+        "singleQuote": true
+      }
+    },
+    {
+      "files": ["**/*.{ts,tsx,js,mjs}"],
+      "options": {
+        "semi": true,
+        "singleQuote": true,
+        "printWidth": 100
+      }
+    }
+  ]
+}
