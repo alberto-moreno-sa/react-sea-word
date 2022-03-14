@@ -21,6 +21,12 @@ class Document extends NextDocument {
           <link rel="icon" href="/favicon.png" />
           <link rel="icon" href="/android-icon.png" sizes="192x192" />
           <link rel="apple-touch-icon" sizes="180x180" href="/touch-icon-iphone-retina.png" />
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossOrigin="anonymous"
+          />
         </Head>
         <body>
           <Main />

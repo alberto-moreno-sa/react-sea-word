@@ -3,186 +3,175 @@
 exports[`renders Home details unchanged 1`] = `
 <div>
   <div
-    class="relative bg-white overflow-hidden"
     data-testid="sea-word-home"
   >
-    <div
-      class="max-w-7xl mx-auto"
+    <nav
+      class="flex flex-wrap items-center justify-between py-2.5 px-3 mb-3 bg-light-blue-500"
+      data-testid="nav-bar"
     >
       <div
-        class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
+        class="container max-w-7xl px-4 mx-auto flex flex-wrap items-center justify-between"
       >
-        <svg
-          aria-hidden="true"
-          class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-          fill="currentColor"
-          preserveAspectRatio="none"
-          viewBox="0 0 100 100"
+        <div
+          class="w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
         >
-          <polygon
-            points="50,0 100,0 50,100 0,100"
-          />
-        </svg>
-        <div>
-          <div
-            class="relative pt-6 px-4 sm:px-6 lg:px-8"
+          <a
+            data-testid="nav-bar-link"
+            href="/"
           >
-            <nav
-              aria-label="Global"
-              class="relative flex items-center justify-between sm:h-10 lg:justify-start"
+            <span
+              class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
             >
-              <div
-                class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0"
-              >
-                <div
-                  class="flex items-center justify-between w-full md:w-auto"
-                >
-                  <a
-                    href="#"
-                  >
-                    <span
-                      class="sr-only"
-                    >
-                      Workflow
-                    </span>
-                    <img
-                      class="h-8 w-auto sm:h-10"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    />
-                  </a>
-                  <div
-                    class="-mr-2 flex items-center md:hidden"
-                  >
-                    <button
-                      aria-expanded="false"
-                      class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                      id="headlessui-popover-button-1"
-                      type="button"
-                    >
-                      <span
-                        class="sr-only"
-                      >
-                        Open main menu
-                      </span>
-                      <svg
-                        aria-hidden="true"
-                        class="h-6 w-6"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4 6h16M4 12h16M4 18h16"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="hidden md:block md:ml-10 md:pr-4 md:space-x-8"
-              >
-                <a
-                  class="font-medium text-gray-500 hover:text-gray-900"
-                  href="#"
-                >
-                  Product
-                </a>
-                <a
-                  class="font-medium text-gray-500 hover:text-gray-900"
-                  href="#"
-                >
-                  Features
-                </a>
-                <a
-                  class="font-medium text-gray-500 hover:text-gray-900"
-                  href="#"
-                >
-                  Marketplace
-                </a>
-                <a
-                  class="font-medium text-gray-500 hover:text-gray-900"
-                  href="#"
-                >
-                  Company
-                </a>
-                <a
-                  class="font-medium text-indigo-600 hover:text-indigo-500"
-                  href="#"
-                >
-                  Log in
-                </a>
-              </div>
-            </nav>
+              SeaWord
+            </span>
+          </a>
+          <button
+            class="cursor-pointer text-xl leading-none py-1 px-1.5 rounded-full border border-solid border-transparent bg-transparent block lg:hidden outline-none focus:outline-none hover:bg-white hover:bg-opacity-20 transition-all duration-300"
+            data-testid="test-nav-toggler"
+          >
+            <span
+              class="block relative w-6 h-px rounded-sm bg-white"
+            />
+            <span
+              class="block relative w-6 h-px rounded-sm bg-white mt-1"
+            />
+            <span
+              class="block relative w-6 h-px rounded-sm bg-white mt-1"
+            />
+          </button>
+        </div>
+        <div
+          class="lg:flex flex-grow items-center hidden"
+          data-testid="test-menu"
+        >
+          <ul
+            class="flex lg:items-center flex-col lg:flex-row list-none ml-auto"
+          >
+            <a
+              class="px-5 py-4 flex gap-1 items-center text-xs uppercase font-medium leading text-white rounded-lg"
+              data-testid="test-nav-menu-link"
+              href="https://www.linkedin.com/in/albert-moreno/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i
+                class="fab fa-brands fa-linkedin-in text-xl leading-none"
+                data-testid="icon"
+              />
+               My Profile
+            </a>
+            <a
+              class="px-5 py-4 flex gap-1 items-center text-xs uppercase font-medium leading text-white rounded-lg"
+              data-testid="test-nav-menu-link"
+              href="https://github.com/alberto-moreno-sa/sea-word-challenge"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i
+                class="fab fa-github text-xl leading-none"
+                data-testid="icon"
+              />
+               Github
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main
+      data-testid="main-content"
+    >
+      <section
+        class="relative py-16 bg-gray-100"
+      >
+        <div
+          class="container max-w-7xl px-4 mx-auto"
+        >
+          <div>
+            hello
           </div>
         </div>
-        <main
-          class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+      </section>
+    </main>
+    <footer
+      class="relative bg-gray-100 pt-8 pb-6"
+      data-tesid="footer"
+    >
+      <div
+        class="container max-w-7xl mx-auto px-4"
+      >
+        <div
+          class="flex flex-wrap text-center lg:text-left pt-6"
         >
           <div
-            class="sm:text-center lg:text-left"
+            class="w-full lg:w-6/12 px-4"
           >
             <h1
-              class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
+              class="text-2xl font-serif font-bold leading-normal mt-0 mb-2"
             >
-              <span
-                class="block xl:inline"
-              >
-                Data to enrich your
-              </span>
-               
-              <span
-                class="block text-indigo-600 xl:inline"
-              >
-                online business
-              </span>
+              Sea Word
             </h1>
             <p
-              class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
+              class="text-lg font-light leading-relaxed mt-6 mb-4"
+              style="margin-top: 0px;"
             >
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+              Small Sea word where you cnat create island.
             </p>
             <div
-              class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
+              class="flex gap-2 mt-6 md:justify-start md:mb-0 mb-8 justify-center"
             >
-              <div
-                class="rounded-md shadow"
+              <a
+                class="grid place-items-center bg-white text-gray-900 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none"
+                href="https://github.com/alberto-moreno-sa/sea-word-challenge"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                <a
-                  class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
-                  href="#"
-                >
-                  Get started
-                </a>
-              </div>
-              <div
-                class="mt-3 sm:mt-0 sm:ml-3"
+                <i
+                  class="fab fa-github text-xl"
+                  data-testid="icon"
+                />
+              </a>
+              <a
+                class="grid place-items-center bg-white text-gray-900 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none"
+                href="https://www.linkedin.com/in/albert-moreno/"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                <a
-                  class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
-                  href="#"
-                >
-                  Live demo
-                </a>
-              </div>
+                <i
+                  class="fab fa-brands fa-linkedin-in text-xl "
+                  data-testid="icon"
+                />
+              </a>
             </div>
           </div>
-        </main>
+        </div>
+        <hr
+          class="my-6 border-gray-300"
+        />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div
+            class="w-full md:w-4/12 px-4 mx-auto text-center"
+          >
+            <div
+              class="text-sm text-gray-700 font-medium py-1"
+            >
+              Copyright © 
+              2022
+               by
+               
+              <a
+                class="text-gray-700 hover:text-gray-900 transition-all"
+                href="https://github.com/alberto-moreno-sa"
+              >
+                Alberto Moreno
+              </a>
+              .
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div
-      class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
-    >
-      <img
-        alt=""
-        class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-        src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
-      />
-    </div>
+    </footer>
   </div>
 </div>
 `;

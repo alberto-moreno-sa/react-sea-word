@@ -47,6 +47,8 @@ jest.mock('next/router', () => ({
   },
 }));
 
+jest.mock('material-ripple-effects');
+
 global.window = Object.create(window);
 const url = 'http://localhost';
 Object.defineProperty(window, 'location', {
