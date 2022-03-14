@@ -6,7 +6,7 @@ exports[`renders Home details unchanged 1`] = `
     data-testid="sea-word-home"
   >
     <nav
-      class="flex flex-wrap items-center justify-between py-2.5 px-3 mb-3 bg-light-blue-500"
+      class="flex flex-wrap items-center justify-between py-2.5 px-3 bg-light-blue-500"
       data-testid="nav-bar"
     >
       <div
@@ -81,19 +81,116 @@ exports[`renders Home details unchanged 1`] = `
       data-testid="main-content"
     >
       <section
-        class="relative py-16 bg-gray-100"
+        class="bg-gray-100 py-16"
       >
         <div
           class="container max-w-7xl px-4 mx-auto"
         >
-          <div>
-            hello
+          <div
+            class="w-96 mb-10 mx-auto"
+          >
+            <div
+              class="w-full bg-white rounded-xl overflow-hdden shadow-md p-4"
+              data-testid="test-card-control"
+            >
+              <div
+                class="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 -mt-10 mb-4 rounded-xl text-white grid items-center w-full py-4 px-8 justify-center shadow-lg-light-blue undefined"
+              >
+                <h1
+                  class="text-white text-2xl font-serif font-bold leading-normal mt-0 mb-22"
+                  data-testid="test-card-control-tile"
+                >
+                  Controls
+                </h1>
+              </div>
+              <h3
+                class="text-2xl font-serif font-bold leading-normal mt-0 mb-22 my-3"
+                data-testid="test-card-control-subtile"
+              >
+                Select the size of the sea
+              </h3>
+              <div
+                class="flex flex-wrap border-solid border-2 rounded-md border-gray-200 w-full p-4"
+                data-testid="test-size-word"
+              >
+                <div
+                  class="flex items-baseline p-3 w-full"
+                  data-testid="test-size-word-range-x"
+                >
+                  <label
+                    class="cursor-pointer mr-3 "
+                    for="rangeX"
+                  >
+                    Range X
+                  </label>
+                  <div
+                    class="grow"
+                  >
+                    <input
+                      class="cursor-pointer w-full"
+                      data-testid="test-size-word-range-x-input"
+                      id="rangeX"
+                      max="50"
+                      min="0"
+                      name="rangeX"
+                      type="range"
+                      value="8"
+                    />
+                    <div
+                      class="w-full flex justify-end text-xs px-2 max-w-xs"
+                    >
+                      <p
+                        class="text-gray-900 text-sm font-bold leading-normal"
+                        data-testid="test-size-word-range-x-input-value"
+                      >
+                        8
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-baseline p-3 w-full"
+                  data-testid="test-size-word-range-y"
+                >
+                  <label
+                    class="cursor-pointer mr-3 "
+                    for="rangeY"
+                  >
+                    Range Y
+                  </label>
+                  <div
+                    class="grow"
+                  >
+                    <input
+                      class="cursor-pointer w-full"
+                      data-testid="test-size-word-range-y-input"
+                      id="rangeY"
+                      max="50"
+                      min="0"
+                      name="rangeY"
+                      type="range"
+                      value="8"
+                    />
+                    <div
+                      class="w-full flex justify-end text-xs px-2 max-w-xs"
+                    >
+                      <p
+                        class="text-gray-900 text-sm font-bold leading-normal"
+                        data-testid="test-size-word-range-y-input-value"
+                      >
+                        8
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer
-      class="relative bg-gray-100 pt-8 pb-6"
+      class="relative pt-8 pb-6"
       data-tesid="footer"
     >
       <div

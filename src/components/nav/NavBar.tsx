@@ -9,7 +9,7 @@ export const NavBar: React.FC = () => {
   return (
     <nav
       data-testid="nav-bar"
-      className="flex flex-wrap items-center justify-between py-2.5 px-3 mb-3 bg-light-blue-500"
+      className="flex flex-wrap items-center justify-between py-2.5 px-3 bg-light-blue-500"
     >
       <div className="container max-w-7xl px-4 mx-auto flex flex-wrap items-center justify-between">
         <div className="w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start">

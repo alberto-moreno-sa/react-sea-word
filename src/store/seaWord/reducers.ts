@@ -1,17 +1,18 @@
-import { SeaWordState, setWordActionTypes, SET_WORD } from './types';
+import { SeaWordState, WorldTypes, UPDATE_WORD_SIZE } from './types';
 
 export const seaWordInitialState: SeaWordState = {
-  word: {},
+  world: {
+    x: 8,
+    y: 8,
+  },
 };
 
-export function seaWordReducer(
-  state = seaWordInitialState,
-  action: setWordActionTypes
-): SeaWordState {
+export function seaWordReducer(state = seaWordInitialState, action: WorldTypes): SeaWordState {
   switch (action.type) {
-    case SET_WORD:
+    case UPDATE_WORD_SIZE:
       return {
         ...state,
+        world: action.payload,
       };
     default:
       return state;

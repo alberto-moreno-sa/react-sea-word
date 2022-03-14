@@ -1,7 +1,8 @@
-import { SET_WORD, setWordActionTypes } from './types';
+import { UPDATE_WORD_SIZE, WorldTypes, WordSize } from './types';
 
-export function setWordAction(): setWordActionTypes {
+export function updateSizeWordAction(size: WordSize): WorldTypes {
   return {
-    type: SET_WORD,
+    type: UPDATE_WORD_SIZE,
+    payload: size,
   };
 }
