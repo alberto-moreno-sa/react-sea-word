@@ -1,12 +1,17 @@
 // https://redux.js.org/recipes/usage-with-typescript
-export const SET_WORD = 'SET_WORD';
+export const UPDATE_WORD_SIZE = 'UPDATE_WORD_SIZE';
 
+export interface WordSize {
+  x: number;
+  y: number;
+}
 export interface SeaWordState {
-  word: object;
+  world: WordSize;
 }
 
-interface setWordAction {
-  type: typeof SET_WORD;
+interface updateSizeWordAction {
+  type: typeof UPDATE_WORD_SIZE;
+  payload: WordSize;
 }
 
-export type setWordActionTypes = setWordAction;
+export type WorldTypes = updateSizeWordAction;
