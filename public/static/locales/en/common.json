@@ -1,2 +1,26 @@
 {
+  "title": "SeaWorld",
+  "menu": {
+    "profile": "My Profile",
+    "github": "Github"
+  },
+  "footer": {
+    "title": "Small Sea word where you cnat create island.",
+    "copyright": "Copyright © {{date}} by <a>Alberto Moreno</a>."
+  },
+  "controls": {
+    "title": "Sea World controls",
+    "subTitle": "Select the size of the sea"
+  },
+  "instructions": {
+    "title": "Instructions:",
+    "modal": "Open Instructions",
+    "items": [
+      "It is a small sea world where the user can build islands.",
+      "You can click on the world and add or remove land and create tiny island.",
+      "You canmodify the amount of cells on the grid with sliders X and Y",
+      "An island is a collection of cells that are filled and connected in the X or Y axis (Not diagonally).",
+      " Display the amounts of islands that are present on the grid to the user."
+    ]
+  }
 }
