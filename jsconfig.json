@@ -2,5 +2,5 @@
   "compilerOptions": {
     "baseUrl": "./src"
   },
-  "exclude": ["node_modules", "out", ".next", "cypress"]
+  "exclude": ["node_modules", "out", ".next"]
 }

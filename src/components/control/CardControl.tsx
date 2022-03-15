@@ -1,7 +1,10 @@
 import React from 'react';
-import { SizeWord } from 'components/control';
+import { useTranslation } from 'services/TranslationService';
+import { CounterIsland, SizeWord } from 'components/control';
 
 export const CardControl: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div
       data-testid="test-card-control"
@@ -12,15 +15,10 @@ export const CardControl: React.FC = () => {
           data-testid="test-card-control-tile"
           className="text-white text-2xl font-serif font-bold leading-normal mt-0 mb-22"
         >
-          Controls
+          {t('controls.title')}
         </h1>
       </div>
-      <h3
-        data-testid="test-card-control-subtile"
-        className="text-2xl font-serif font-bold leading-normal mt-0 mb-22 my-3"
-      >
-        Select the size of the sea
-      </h3>
+      <CounterIsland />
       <SizeWord />
     </div>
   );

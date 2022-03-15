@@ -9,6 +9,11 @@ export interface WordSize {
   y: number;
 }
 
+export interface Coords {
+  x: number;
+  y: number;
+}
+
 export interface WorldCoords {
   type: AssetType.dirt | AssetType.water;
   x: number;
@@ -21,7 +26,7 @@ export interface SeaWordState {
 
 export interface MapCoords {
   [coordX: number]: {
-    [coordY: number]: AssetType.dirt | AssetType.water;
+    [coordY: number]: AssetType.dirt | AssetType.water | '';
   };
 }
 

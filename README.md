@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/76efbebc-bc68-4a19-8f90-67a153f621ac/deploy-status)](https://app.netlify.com/sites/sea-word-challenge/deploys)
 
+[Online Site](https://sea-word-challenge.netlify.app/)
+
 # What is this?
 
 Small Sea word where you cnat create island.
@@ -12,52 +14,126 @@ This word is represented by a grid that starts with all tiles as sea tiles and t
 
 The user will need to be able to change the size of this tiny world and have data displayed about this world.
 
+## Structure
+
+This is the directory structure of the application.
+
+```
+  ├── __tests__ -> Unit tests
+  ├── src -> Codebase
+  │   ├── configs
+  |   |     |-- index -> configs
+  |   |     |-- appPats -> urls
+  │   ├── componets
+  |   |     |-- common  -> share component in the proyect
+  |   |     |-- control ->
+  |   |     |-- layout -> Layout component
+  |   |     |-- nav  -> Menu and nav component
+  |   |     |-- word -> Map and Assets component
+  │   ├── pages  -> pages component
+  │   ├── store  -> handle word data
+  │   ├── services
+  │   ├── styles -> custom styles
+  │   └── utils
+  └── coverage
+        ├── lcov-report
+```
+
 # Setup
 
-## Requirements
-
-- Node >=16.14.0 (https://nodejs.org/en/)
-
-## Installation
-
-Clon the repo
+## Clone the repo
 
 `git clone git@github.com:ClipMX/react.cms-clipmx-ecommerce.git`
 
-## Development
+## Building as production the Site Locally
 
-### `npm i`
+To build the site, you need to go through a one-time installation
+procedure.
 
-Install all dependencies.
+### Install The Dependencies
 
-### `npm run dev`
+Before to install dependencies, you should have installed node 16
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Node >=16.14.0 (https://nodejs.org/en/)
 
-### `npm run test`
+### Eject the following command:
 
-Launches the test runner in the interactive watch mode.
+    npm i
 
-# Production
+### When finished installing the dependencies, execute the following command:
 
-### `npm i`
+    npm run build
 
-Install all dependencies.
+### To run the site, execute the following command:
 
-### `npm run build`
+    npm run production:start
+
+## Note
 
 Builds the app for production to the `.next` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
 
-### `npm run production:start`
+# For Development
 
-Builds and run the app for production to the `.next` folder.\
-It correctly bundles in production mode and optimizes the build for the best performance.
+### Eject the following command:
 
-The build is minified and the filenames include the hashes.\
+    npm i
+
+### Runs the app in the development mode, execute the following command:
+
+    npm run dev
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+# For Testing
+
+### Runs the app in the development mode, execute the following command:
+
+Launches the test runner in the interactive watch mode.
+
+`npm run test`
+
+## Documentation
+
+This section explains the most important parts of the project.
+
+### Components
+
+This folder has the components of site.
+
+```
+  ├── components -> Unit tests
+  | |-- common -> share component in the proyect
+  | |-- control ->
+  | |-- layout -> Layout component
+  | |-- nav -> Menu and nav component
+  | |-- word -> Map and Assets component
+```
+
+### pages
+
+This file contains the pages of the site
+
+### store folder
+
+This file contains redux actions for handling of the map information about the size and position of dir and water.
+
+The most important methods are the following:
+
+- updateSizeWordAction: Update the size of the map.
+- switchCellAction: switch the cell of water to dir.
+
+### WordHelpers.ts
+
+This file contains the logic needed for counting islands.
+
+The most important methods are the following:
+
+    - findAdjacentTiles: Return the number of adjacent element of a coordinate
+    - getCoords: Return a value if the current coordinate has an adjacent
+    - getIslandCount: Return the number of island
 
 ## Learn More
 

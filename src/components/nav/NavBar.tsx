@@ -2,9 +2,21 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { NavbarToggler } from '.';
 import { Menu } from './Menu';
+import { useTranslation } from 'services/TranslationService';
+import { Modal } from 'components/common';
 
 export const NavBar: React.FC = () => {
+  const { t } = useTranslation('common');
   const [openNavbar, setOpenNavbar] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const closeModal = (): void => {
+    setIsOpen(false);
+  };
+
+  const openModal = (): void => {
+    setIsOpen(true);
+  };
 
   return (
     <nav
@@ -16,10 +28,18 @@ export const NavBar: React.FC = () => {
           <Link href="/">
             <a data-testid="nav-bar-link">
               <span className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white">
-                SeaWord
+                {t('title')}
               </span>
             </a>
           </Link>
+          <button
+            type="button"
+            onClick={openModal}
+            className="px-4 py-2 text-sm font-medium text-white bg-light-blue-500 rounded-md hover:bg-opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+          >
+            {t('instructions.modal')}
+          </button>
+          <Modal isOpen={isOpen} closeModal={closeModal} />
           <NavbarToggler
             data-testid="test-nav-toggler"
             onClick={() => setOpenNavbar(!openNavbar)}

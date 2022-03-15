@@ -38,5 +38,5 @@
     "**/*.tsx",
     "src/configs/cmsClipMxPaths.js"
   ],
-  "exclude": ["node_modules", "cypress"]
+  "exclude": ["node_modules"]
 }

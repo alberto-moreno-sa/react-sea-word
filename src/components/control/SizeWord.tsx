@@ -4,8 +4,10 @@ import { debounce } from 'lodash';
 import { useDispatch } from 'react-redux';
 import { WordSize, updateSizeWordAction } from 'store/seaWord';
 import { useSelector } from 'store/store';
+import { useTranslation } from 'services/TranslationService';
 
 export const SizeWord: React.FC = () => {
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   const firstDebounce = useRef(true);
   const worldSize = useSelector(state => state.seaWorld.world);
@@ -36,6 +38,12 @@ export const SizeWord: React.FC = () => {
       data-testid="test-size-word"
       className="flex flex-wrap border-solid border-2 rounded-md border-gray-200 w-full p-4"
     >
+      <h3
+        data-testid="test-card-control-subtile"
+        className="font-bold leading-normal mt-0 mb-22 my-3"
+      >
+        {t('controls.subTitle')}:
+      </h3>
       <InputRange
         id="rangeX"
         value={size.x}

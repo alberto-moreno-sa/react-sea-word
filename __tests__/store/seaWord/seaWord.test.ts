@@ -45,8 +45,8 @@ describe('SeaWordRedux', () => {
       expect(action.type).toBe(SWITCH_WORLD_CELL);
       expect(JSON.stringify(reducer.mapWord)).toBe(
         JSON.stringify({
-          3: {
-            6: 'dirt',
+          5: {
+            5: 'dirt',
           },
         })
       );
