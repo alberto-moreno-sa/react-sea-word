@@ -1,0 +1,11 @@
+.asset:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.asset:active {
+  transform: scale(1);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}

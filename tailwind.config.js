@@ -298,6 +298,10 @@ module.exports = {
           900: '#311b92',
         },
       },
+      backgroundImage: {
+        'dirt-texture': "url('/image/world/dirt-texture.jpeg')",
+        'water-texture': "url('/image/world/water-texture.gif')",
+      },
     },
   },
   plugins: [],
