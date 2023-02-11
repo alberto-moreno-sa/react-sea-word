@@ -1,4 +1,4 @@
-# Sea World Challenge
+# Sea World
 
 # What is this?
 
